@@ -17,7 +17,7 @@ class CustomerController extends Controller
 			->orderBy('name')
 			->paginate(10)
 			->appends(['tenant' => request('tenant')]);
-		return view('customers.index', compact('customers'));
+			return view('customers.index', compact('customers'));
     }
 
     /**
